@@ -265,7 +265,7 @@ resource "google_compute_instance" "api" {
   }
 
   # Make sure we have the flask application running
-  metadata_startup_script = file("${path.module}/examples/shared/startup_script.sh")
+  metadata_startup_script = file("${path.module}/startup_script.sh")
 
   # Launch the instance in the default subnetwork
   network_interface {
