@@ -22,7 +22,6 @@ podTemplate(label: label, containers: [
 
         container('terraform') {
           sh 'terraform init'
-          sh 'terraform destroy -auto-approve'
           sh 'terraform plan -out clouddns'
         
     
