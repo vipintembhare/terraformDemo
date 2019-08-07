@@ -6,11 +6,13 @@
 variable "project" {
   description = "The project ID to create the resources in."
   type        = string
+  default     ="conference-console"
 }
 
 variable "region" {
   description = "The region to create the resources in."
   type        = string
+  default     ="europe-west1"
 }
 
 variable "zone" {
