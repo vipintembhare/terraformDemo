@@ -16,6 +16,7 @@ variable "region" {
 variable "zone" {
   description = "The availability zone to create the sample compute instances in. Must within the region specified in 'var.region'"
   type        = string
+  default     ="europe-west1-b"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
