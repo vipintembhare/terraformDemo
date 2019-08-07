@@ -122,7 +122,7 @@ resource "google_compute_health_check" "default" {
 resource "google_storage_bucket" "static" {
   project = var.project
 
-  name          = "${var.name}-bucket-aditya"
+  name          = "${var.name}-bucket-aditya1"
   location      = var.static_content_bucket_location
   storage_class = "MULTI_REGIONAL"
 
