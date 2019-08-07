@@ -16,16 +16,16 @@ terraform {
 # ------------------------------------------------------------------------------
 
 provider "google" {
-  version = "~> 2.7.0"
-  region  = var.region
-  project = var.project
+	credentials = "${file("./creds/serviceaccount.json")}"
+	project     = "conference-console"
+        region      = "europe-west1"
 }
 
-provider "google-beta" {
-  version = "~> 2.7.0"
-  region  = var.region
-  project = var.project
-}
+#provider "google-beta" {
+#  version = "~> 2.7.0"
+#  region  = var.region
+#  project = var.project
+#}
 
 # ------------------------------------------------------------------------------
 # CREATE THE LOAD BALANCER
